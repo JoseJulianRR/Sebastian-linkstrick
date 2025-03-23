@@ -1,72 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Svera | Artista</title>
+    <title>Sveramr_ Linktree</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="imagenes/Imagen de perfil (2).jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/11zon_cropped.png">
 </head>
 <body>
-    <div class="container">
-        <!-- Sección del perfil del artista -->
-        <div class="profile text-center">
-            <img src="imagenes/Imagen de perfil (2).jpg" alt="Foto del Artista" class="profile-pic rounded-circle mb-3">
-            <h1 class="artist-name">𝙎𝙫𝙚𝙧𝙖𝙢𝙧_</h1>
-            <p class="artist-bio">Artista | Compositor</p>
+    <div class="logo-container" id="logo-container">
+        <img src="images/Seba_logo_New_1.jpg" alt="Sveramr-New-Linkstree" class="logo" id="logo">
+        <h1 class="artist-name">Sveramr_</h1>
+    </div>
+
+    <img src="images/Seba_logo_New_1.jpg" alt="Sveramr-New-Linkstree" class="logo profile-move" id="second-logo" style="display:none;">
+
+
+    <div class="links-container" id="links-container" style="display:none;">
+        <a href="https://www.instagram.com/sveramr_?igsh=cHVlZGt4NzBjNmMy&utm_source=qr" class="link"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://youtube.com/@sverapr?si=vWjJQhHEVHoM3Bny" class="link"><i class="fab fa-youtube"></i> YouTube</a>
+        <a href="https://www.tiktok.com/@sveramr_?_t=ZT-8thcQZnHfBr&_r=1" class="link"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="https://music.apple.com/us/album/hace-tiempo/1792056517?i=1792056518" class="link"><i class="fas fa-music"></i> Música de Apple</a>
+        <a href="imagenes/Spotify_Primary_Logo_RGB_Green.png" class="link"><i class="fab fa-spotify"></i> Spotify</a>
+        <hr>
+
+        <button class="link" onclick="toggleEmails('melaza-emails')">
+            <span class="mr-logo">MR</span> Melaza Record
+        </button>
+        <div id="melaza-emails" class="email-container hidden">
+            <p><a href="mailto:melazarecordent@gmail.com">melazarecordent@gmail.com</a></p>
         </div>
 
-        <!-- Lista de enlaces -->
-        <section class="links text-center">
-            <!-- Enlace a Instagram -->
-            <a href="https://www.instagram.com/sveramr_?igsh=cHVlZGt4NzBjNmMy&utm_source=qr" class="link-button mb-3" target="_blank" rel="noopener noreferrer">
-                <img src="imagenes/instagram-logo-instagram-icon-transparent-free-png.webp" alt="Instagram Logo" class="custom-icon"> Instagram
-            </a>
-            <!-- Enlace a YouTube -->
-            <a href="https://youtube.com/@sverapr?si=vWjJQhHEVHoM3Bny" class="link-button mb-3" target="_blank" rel="noopener noreferrer">
-                <img src="imagenes/Youtube_logo.png" alt="YouTube Logo" class="custom-icon"> YouTube
-            </a>
-            <!-- Enlace a TikTok -->
-            <a href="https://www.tiktok.com/@sveramr_?_t=ZT-8thcQZnHfBr&_r=1" class="link-button mb-3" target="_blank" rel="noopener noreferrer">
-                <img src="imagenes/tik-tok-logo-6fh.png" alt="TikTok Logo" class="custom-icon"> TikTok
-            </a>
-
-            <!-- Enlace a Apple Music -->
-            <a href="https://music.apple.com/us/album/hace-tiempo/1792056517?i=1792056518" class="link-button mb-3" target="_blank" rel="noopener noreferrer">
-                <img src="imagenes/Apple_Music_icon.svg.png" alt="Apple Music Logo" class="custom-icon"> Apple Music
-            </a>
-
-            <!-- Enlace a Spotify -->
-            <a href="https://open.spotify.com/track/1n1pXMhRmntHFbDSsOKicr?si=V6m_iYHlQEKzNSWj4_QKeA&context=spotify%3Aalbum%3A1dHDcwbJNLaKEaWSM4ZXrt" class="link-button mb-3" target="_blank" rel="noopener noreferrer">
-                <img src="imagenes/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify Logo" class="custom-icon"> Spotify
-            </a>
-
-            <!-- Melaza Record Button and Popup -->
-            <label for="melaza-record" class="link-button mb-3">
-                <img src="imagenes/Melaza record logo.jpg" alt="Melaza Logo" class="custom-icon"> Melaza Record
-            </label>
-            <input type="checkbox" id="melaza-record" class="checkbox-toggle">
-            <div class="popup">
-                <p><strong>Contacto de Melaza Record:</strong></p>
-                <p>Email: <a href="mailto:melazarecordent@gmail.com">melazarecordent@gmail.com</a></p>
-            </div>
-
-            <!-- Booking Button and Popup -->
-            <label for="booking" class="link-button mb-3">
-                <img src="imagenes/Spider.png" alt="Spider Icon" class="custom-icon"> Booking
-            </label>
-            <input type="checkbox" id="booking" class="checkbox-toggle">
-            <div class="popup">
-                <p><strong>Contacto de Booking:</strong></p>
-                <p>Email: <a href="mailto:ryanmelaza18@gmail.com">ryanmelaza18@gmail.com</a></p>
-                <p>Email: <a href="mailto:melazajesus18@gmail.com">melazajesus18@gmail.com</a></p>
-            </div>
-        </section>
-
-        <footer class="text-center mt-5">
-            <p>&copy; 2025 Svera. Todos los derechos reservados.</p>
-            <p>Hecho con ❤️ por <a href="https://jj-visual.com" target="_blank" rel="noopener noreferrer">José Julián</a></p>
-        </footer>
+        <button class="link" onclick="toggleEmails('booking-emails')">
+            <i class="fas fa-spider"></i> Booking
+        </button>
+        <div id="booking-emails" class="email-container hidden">
+            <p><a href="mailto:ryanmelaza18@gmail.com">ryanmelaza18@gmail.com</a></p>
+            <p><a href="mailto:melazajesus18@gmail.com">melazajesus18@gmail.com</a></p>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2025 Svera. Todos los derechos reservados.</p>
+        <p>Hecho con ❤️ por <a href="https://jj-visual.com/" target="_blank" style="color: #FFD700;">José Julián</a></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
