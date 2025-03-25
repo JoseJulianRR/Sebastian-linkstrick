@@ -160,3 +160,11 @@ footer {
         max-width: 90%;
     }
 }
+
+.custom-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border-radius: 4px; /* opcional, por si quieres bordes redondeados */
+}
